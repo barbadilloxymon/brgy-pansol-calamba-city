@@ -1,0 +1,83 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .logo {
+        width: 80px; /* Smaller logo for mobile */
+        height: 80px; /* Maintain circular shape */
+    }
+
+    .main-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width for menu */
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .main-menu li {
+        margin: 5px 0; /* Space between menu items */
+    }
+
+    .content {
+        font-size: 1.2rem; /* Adjust font size for readability */
+        padding: 10px; /* Reduce padding */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .popup-content {
+        width: 90%; /* Full width for popup on mobile */
+        max-width: 400px; /* Limit max width */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack contact and map vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .map {
+        width: 100%; /* Full width for map */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .credit {
+        font-size: 12px; /* Smaller font size for copyright */
+    }
+}
+
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 15px; /* Adjust padding for tablets */
+    }
+
+    .logo {
+        width: 90px; /* Adjust logo size */
+        height: 90px;
+    }
+
+    .content {
+        font-size: 1.4rem; /* Adjust font size for tablets */
+        padding: 15px; /* Adjust padding */
+        margin: 15px; /* Adjust margin */
+    }
+
+    .popup-content {
+        width: 80%; /* More space for popup */
+        max-width: 500px; /* Limit max width */
+    }
+
+    .footer-content {
+        flex-direction: row; /* Keep items in a row for tablets */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .map {
+        width: 50%; /* Map takes half the width */
+        margin-left: 20px; /* Space between contact and map */
+    }
+}
+

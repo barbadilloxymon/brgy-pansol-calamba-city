@@ -1,0 +1,182 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+header {
+    background-color: rgb(2, 2, 52); /* Semi-transparent dark background for better visibility */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Allows the header to remain fixed at the top */
+    z-index: 1; /* Ensures the header is above the content */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the logo and the menu */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image scales well within the circle */
+    margin-right: 800px;
+    margin-left: 10px;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between each menu item */
+    margin-left: auto; /* Pushes the menu to the right */
+}
+
+.main-menu li {
+    display: inline;
+    
+}
+
+.main-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.main-menu a:hover {
+    background-color:  rgb(245, 162, 8);
+    border-radius: 5px;
+}
+
+/* About section styling */
+.about {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about h1 {
+    color: rgb(2, 2, 52);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* About image styling */
+.about-image {
+    margin: 20px 0;
+}
+
+.about-image img {
+    width: 60%;
+    height: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and menu styling */
+header {
+    background-color: rgb(2, 2, 52);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.main-menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.main-menu a:hover {
+    background-color: rgb(245, 162, 8);
+    border-radius: 5px;
+}
+
+/* Responsive menu toggle */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive styling for mobile menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        border-top: 1px solid #ddd;
+    }
+
+    .main-menu.active {
+        display: flex;
+    }
+
+    .main-menu li {
+        text-align: center;
+        padding: 10px;
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(2, 2, 52);
+    color: white;
+    position: relative;
+    top: 35px;
+    bottom: 0;
+    width: 100%;
+}
